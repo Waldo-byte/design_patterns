@@ -9,7 +9,7 @@
 
 ### 3) UML Representation
 ```mermaid
-classDiagram
+graph classDiagram;
 class Factory{
     -m_Object : Object
     +Operation1()
