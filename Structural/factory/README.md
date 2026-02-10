@@ -8,6 +8,7 @@
   - Creates a object || returns a existing object
 
 ### 3) UML Representation
+
 ```mermaid
 graph classDiagram;
 class Factory{
