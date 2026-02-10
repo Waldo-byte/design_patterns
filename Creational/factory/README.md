@@ -35,14 +35,14 @@ Factory <|-- ConcreteObjectBFact : Inherits
 note for ConcreteObjectAFact "return ObjectA{}"
 note for ConcreteObjectBFact "return ObjectB{}"
 
-Factory *-- Object : composistion
+Factory *-- Object : composition
 Factory o-- Object : aggregation
 
 Object --|> ConcreteObjectA
 Object --|> ConcreteObjectB
 
-note for Factory "This can only create the Object, but that does not
-have to be the case, this is refered to as the factory,
-becuase all the functionality (handling the object) can also
+note for Factory "This creates the Object, but that is not the
+only thing it does, this is refered to as the factory,
+because all the functionality (handling the object) can also
 be done in this class (Operation1, Operation2)"
 ```
