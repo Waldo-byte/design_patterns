@@ -2,22 +2,20 @@
 
 #ifndef SQUAREINTERFACE
 #define SQUAREINTERFACE
-#endif // !SQUAREINTERFACE
 
 #include "BaseInterface.hpp"
 #include <cstdio>
 
-class SquareShape : BaseShape {
+class SquareShape : public BaseShape {
+public:
   // Constructor && Destructor
-  SquareShape();
-  ~SquareShape();
+  SquareShape() {};
+  ~SquareShape() override {};
 
   // Public Operations
   virtual void drawShape() override {printf("| Square |\n");};
 
-  // Public attributes
-public:
-
   // Private Operations and attributes
 private:
 };
+#endif // !SQUAREINTERFACE

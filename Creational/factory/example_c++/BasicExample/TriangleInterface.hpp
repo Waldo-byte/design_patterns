@@ -2,21 +2,19 @@
 
 #ifndef TRIANGLEINTERFACE
 #define TRIANGLEINTERFACE
-#endif // !TRIANGLEINTERFACE
 
 #include "BaseInterface.hpp"
 #include <cstdio>
 
-class TriangleShape : BaseShape {
+class TriangleShape : public BaseShape {
+public:
   // Constructor && Destructor
-  TriangleShape();
-  ~TriangleShape();
+  TriangleShape() {};
+  ~TriangleShape() override {};
 
   // Public operations
   virtual void drawShape() override { printf("| Triangle |\n"); };
 
-public:
-
-
 private:
 };
+#endif // !TRIANGLEINTERFACE
